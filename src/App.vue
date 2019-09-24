@@ -1,12 +1,25 @@
 <template>
   <div id="app">
-    <router-view/>
+    <div class="app_header">
+      <div>product management</div>
+      <div>admin</div>
+    </div>
+    <div class="app_section">
+      <Menu />
+      <div class='app_section_content'>
+        <router-view/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import Menu from './common/Menu';
   export default {
     name: 'App',
+    components: {
+      Menu
+    },
     watch: {
       $route: {
         handler() {
@@ -30,5 +43,23 @@
   }
   body {
     margin: 0px;
+  }
+  .app_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    margin-bottom: 1em;
+    height: 64px;
+    background-color: #000;
+    color: #fff;
+  }
+  .app_section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .app_section_content {
+    width:calc(100% - 250px - 1em);
+    margin-left: 1em;
   }
 </style>
