@@ -51,7 +51,7 @@ import Menu from './common/Menu';
     padding: 0 2em;
     margin-bottom: 1em;
     height: 64px;
-    background-color: #000;
+    background-color: rgb(84, 92, 100);
     color: #fff;
   }
   .app_section {
@@ -59,7 +59,7 @@ import Menu from './common/Menu';
     justify-content: space-between;
   }
   .app_section_content {
-    width:calc(100% - 250px - 1em);
-    margin-left: 1em;
+    width:calc(100% - 220px - 2em);
+    margin:0 1em;
   }
 </style>
