@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import 'element-ui/lib/theme-chalk/index.css';
+import Less from 'Less'
 import { Form,FormItem,Input,Button,Message,Notification,Menu,Submenu,Row,Col,
          MenuItem,MenuItemGroup } from 'element-ui'
 

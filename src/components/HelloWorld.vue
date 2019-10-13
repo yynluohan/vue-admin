@@ -33,6 +33,11 @@
         />
       </el-col>
     </el-row>
+
+    <!-- <div class='section_header'>
+        kkkkk
+      <div><a href='http://www.baidu.com'>这是一个跳转</a></div>
+    </div> -->
   </div>
 </template>
 
@@ -46,9 +51,6 @@ export default {
 }
 </script>
 
-<style scoped>
-  .contain {
-
-
-  }
+<style lang="less" scoped>
+  @import "../assets/less/helloword.less";
 </style>

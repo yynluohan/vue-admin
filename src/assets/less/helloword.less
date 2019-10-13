@@ -1,0 +1,19 @@
+@width: 100px;
+@height: @width + 10px;
+@backgroundColor: #777;
+
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+
+.section_header {
+  width: @width;
+  height: @height;
+  background-color: @backgroundColor;
+  .bordered()
+}
+
+.section_header div {
+  .bordered()
+}
